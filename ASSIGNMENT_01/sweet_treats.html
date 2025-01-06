@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        nav {
+            background-color: #ff9999;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        #about, #menu {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ff9999;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        footer {
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+        footer p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .interactive-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff9999;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive-button:hover {
+            background-color: #ff6666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Treats Bakery</h1>
+        <p>Bringing Sweetness to Your Life!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Sweet Treats Bakery, your go-to destination for freshly baked goods made with love. We specialize in delightful pastries, artisan bread, and custom cakes to make every occasion special.</p>
+            <button class="interactive-button" onclick="alert('Thank you for your interest! Visit us today for a sweet experience.')">Learn More</button>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="cupcake.jpg" alt="Delicious chocolate cupcake">
+                <p><strong>Chocolate Cupcake:</strong> Rich and moist chocolate cupcakes topped with creamy frosting.</p>
+            </div>
+            <div class="menu-item">
+                <img src="croissant.jpg" alt="Golden flaky croissant">
+                <p><strong>Butter Croissant:</strong> Golden, flaky, and buttery croissants perfect for breakfast.</p>
+            </div>
+            <div class="menu-item">
+                <img src="birthday_cake.jpg" alt="Beautifully decorated birthday cake">
+                <p><strong>Custom Cakes:</strong> Beautifully crafted cakes for every celebration.</p>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <p><strong>Contact Us:</strong> 123 Sweet Lane, Bakersville | Phone: (123) 456-7890 | Email: info@sweettreats.com</p>
+        <p>&copy; 2025 Sweet Treats Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
