@@ -1,33 +1,20 @@
-import Header from 'Header.jsx'
-import Content from 'Content.jsx'
-import Footer from 'Footer.jsx'
-import { useState } from 'react'
-import './App.css'
+import logo from './logo.svg';
+import './App.css';
+import CustomerAdd from './CustomerAdd';
+import CustomerView from './CustomerView';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        [1,2,3,4,5].map(i => <li> {i} </li> )
-</div>
-
-
-      <div>
-
-
-      </div>
-      <div>
-        <Content/>
-      </div>
-      
-      <div>
-        <Footer/>
-      </div>
-      
-    </>
-  )
+	<Provider store={store}>
+		<div className="App">
+			<h1>React Redux Customer Example</h1>
+			<CustomerAdd/>
+			<CustomerView/>
+		</div>
+	</Provider>
+  );
 }
 
-export default App
+export default App;
